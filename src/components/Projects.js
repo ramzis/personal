@@ -15,28 +15,38 @@ export const PROJECTS = [
       "An experiment using an unsual form of input - an electric guitar. The game uses microphone input (routed from a guitar) which is interpreted as different frequencies. Certain frequencies are mapped to a character controller allowing basic movement."
   },
   {
-    title: "a",
+    title: "Bueno",
     description:
       'A remake of the classical "Uno" game. Features multiple card moves, move validation, multiplayer setting, rudimentary AI. Currently being redone as a socket based client-server application.'
   },
   {
-    title: "b",
+    title: "Interactive keyboard button",
     description:
-      'A remake of the classical "Uno" game. Features multiple card moves, move validation, multiplayer setting, rudimentary AI. Currently being redone as a socket based client-server application.'
+      "Small study of animation states. A clickable keyboard button simulator."
   },
   {
-    title: "c",
+    title: "Mobile ticket app",
     description:
-      'A remake of the classical "Uno" game. Features multiple card moves, move validation, multiplayer setting, rudimentary AI. Currently being redone as a socket based client-server application.'
+      "A UI creation study. A clone of the interface for a bus ticket application. Features a fully dynamic system with a counter based on ticket purchase and expiration time."
   },
   {
-    title: "d",
+    title: "AR Building application",
     description:
-      'A remake of the classical "Uno" game. Features multiple card moves, move validation, multiplayer setting, rudimentary AI. Currently being redone as a socket based client-server application.'
+      "An AR app for creating meshes. My contribution includes the ability to place vertices on floors and walls. These in turn can be used to create new planes, walls, and fences. The mesh textures and height can be adjusted during runtime."
   },
   {
-    title: "e",
+    title: "AR Core inside out tracking",
     description:
-      'A remake of the classical "Uno" game. Features multiple card moves, move validation, multiplayer setting, rudimentary AI. Currently being redone as a socket based client-server application.'
+      "A mobile VR experience exploring the surface of Venus. My contribution includes a system for recalibrating the in-game environment by utilising real world marker images."
+  },
+  {
+    title: "Forest",
+    description:
+      "A relaxing procedurally generated experience. A concept of getting lost in nature."
+  },
+  {
+    title: "Pogo Painter",
+    description:
+      "A collaboration with a friend to recreate the classical 'Crash Bash' minigame 'Pogo Painter'. I was responsible for the map generation mechanics and collectable item spawning. Maps are built from abstract definitions which allows for highly customizable configurations. A graph was used to allow further integration of AI agents which would play alongside humans."
   }
 ];

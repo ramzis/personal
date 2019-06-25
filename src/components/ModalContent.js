@@ -1,13 +1,12 @@
-import _ from "lodash";
 import React from "react";
-import { Button, Header, Icon, Image, Modal } from "semantic-ui-react";
+import { Header, Image, Modal } from "semantic-ui-react";
 
 const ModalContent = ({ image, title, description }) => (
   <Modal
     trigger={
       <div className="card">
         <div className="image">
-          <img src={image} />
+          <img alt={title} src={image} />
         </div>
       </div>
     }

@@ -34,7 +34,7 @@ class Links extends Component {
   renderButtons(buttons) {
     return _.map(buttons, ({ url, icon, color, label }) => {
       return (
-        <Button animated="fade" color="white" key={label}>
+        <Button animated="fade" key={label}>
           <a href={url} target="_blank" rel="noopener noreferrer">
             <Button.Content visible>
               <Icon name={icon} />

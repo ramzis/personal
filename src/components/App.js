@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Grid } from "semantic-ui-react";
 
 import Intro from "./Intro";
 import Content from "./Content";
@@ -12,7 +11,7 @@ class App extends Component {
       case 1:
         return <Content />;
       default:
-        return <Intro />;
+        return <Content />;
     }
   }
 

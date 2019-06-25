@@ -1,6 +1,5 @@
 import _ from "lodash";
 import React, { Component } from "react";
-import { Grid } from "semantic-ui-react";
 import ModalContent from "./ModalContent";
 import { PROJECTS } from "./Projects";
 
@@ -20,7 +19,7 @@ class Content extends Component {
 
   render() {
     return (
-      <div className="ui link stackable four cards" style={{ margin: "1em" }}>
+      <div className="ui link stackable two cards" style={{ margin: "1em" }}>
         {this.renderProjects(PROJECTS)}
         <ModalContent />
       </div>
