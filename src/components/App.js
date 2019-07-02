@@ -1,66 +1,34 @@
 import React, { Component } from "react";
 
 import Intro from "./Intro";
-import Content from "./Content";
+import Portfolio from "./Portfolio";
 
 class App extends Component {
-  state = { portfolioView: 0 };
-
-  renderPortfolioView() {
-    switch (this.state.portfolioView) {
-      case 1:
-        return <Content />;
-      default:
-        return <Content />;
-    }
-  }
-
-  renderPortfolio() {
-    return (
-      <div
-        className="ui vertical basic segment"
-        style={{ backgroundColor: "#FFFAEF" }}
-      >
-        <div style={{ padding: "3em 0em 1em 0em", margin: 0 }}>
-          <h1 className="ui center aligned header">Portfolio</h1>
-        </div>
-        <hr />
-        <div className="ui two top attached buttons">
-          <div
-            className={
-              "ui white basic button " +
-              (this.state.portfolioView === 0 ? "active" : null)
-            }
-            onClick={() => this.setState({ portfolioView: 0 })}
-          >
-            Programs
-          </div>
-          <div
-            className={
-              "ui white basic button " +
-              (this.state.portfolioView === 1 ? "active" : null)
-            }
-            onClick={() => this.setState({ portfolioView: 1 })}
-          >
-            Models
-          </div>
-        </div>
-        <div className="ui basic padded container margin-1">
-          <div className="ui container">{this.renderPortfolioView()}</div>
-        </div>
-      </div>
-    );
-  }
-
   render() {
     return (
       <div className="ui container">
         <div className="ui vertical basic segment section-first">
           <Intro />
         </div>
-        {this.renderPortfolio()}
-        <footer className="ui footer">
-          <p>Tadas Audinis 2019</p>
+        <div className="ui vertical basic segment">
+          <Portfolio />
+        </div>
+        <div className="ui vertical basic segment short-segment" id="about">
+          <h1 className="ui center aligned header">About me</h1>
+          <ul>
+            <li>
+              I'm enthusiastic about making fun experiences and collaborating
+              with like-minded people
+            </li>
+            <li>I am most experienced in using C#, Python & Unity</li>
+            <li>I enjoy learning new tools, frameworks and paradigms</li>
+          </ul>
+        </div>
+        <footer className="ui centered container margin-1">
+          <div className="ui section divider" />
+          <h4>
+            Made with <i className="heart icon" /> by Tadas Audinis
+          </h4>
         </footer>
       </div>
     );

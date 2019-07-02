@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    />
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora|Overpass+Mono"
-      rel="stylesheet"
-    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-133167713-1"
     ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "UA-133167713-1");
+    </script>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="”theme-color”" content="#fffaef" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora|Overpass+Mono"
+      rel="stylesheet"
+    />
     <title>Tadas Audinis, Software Engineer</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div class="ui container">
+        <div
+          class="ui vertical piled placeholder segment"
+          style="height: 100vh"
+        >
+          <h2 class="ui yellow center aligned icon header">
+            <i class="js icon"></i>
+            <div class="content">
+              Please enable JavaScript to view my website
+            </div>
+          </h2>
+        </div>
+      </div>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>

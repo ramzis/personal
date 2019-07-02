@@ -1,0 +1,78 @@
+html,
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+div .Typewriter {
+  display: inline;
+}
+
+.margin-1 {
+  margin: 1em;
+}
+
+.segment {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaef !important;
+}
+
+.short-segment {
+  min-height: 20vh;
+}
+
+.section-first .grid {
+  background-image: url("images/houses.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: sepia(0.2);
+  height: 100vh !important;
+}
+
+.ui .grid {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+h1,
+h4,
+.ui .header,
+.ui .modal > .header {
+  color: #4c372b;
+  font-family: "Overpass Mono", monospace;
+}
+
+.button,
+button {
+  font-family: "Overpass Mono", monospace !important;
+  width: 5em;
+}
+
+a,
+button a,
+button a:hover,
+a:visited {
+  text-decoration-color: #4c372b;
+  color: #4c372b;
+}
+
+.ui.cards > .card > .image > img {
+  max-height: 280px;
+}
+
+#about.segment {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}

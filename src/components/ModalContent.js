@@ -12,10 +12,15 @@ const ModalContent = ({ image, title, description }) => (
     }
   >
     <Modal.Header>{title}</Modal.Header>
-    <Modal.Content image scrolling>
-      <Image size="massive" src={image} wrapped />
+    <Modal.Content image scrolling={Boolean(description)}>
+      {description ? (
+        <Image size="massive" src={image} wrapped />
+      ) : (
+        <Image size="massive" src={image} centered />
+      )}
+
       <Modal.Description>
-        <Header>About</Header>
+        {description ? <Header>About</Header> : null}
         {description}
       </Modal.Description>
     </Modal.Content>

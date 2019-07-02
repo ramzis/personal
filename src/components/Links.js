@@ -1,6 +1,5 @@
 import _ from "lodash";
 import React, { Component } from "react";
-import Resume from "../documents/resume.txt";
 import { Button, Icon } from "semantic-ui-react";
 
 const LINKS = [
@@ -23,7 +22,7 @@ const LINKS = [
     label: "Contact"
   },
   {
-    url: { Resume },
+    url: process.env.PUBLIC_URL + "/documents/resume.txt",
     icon: "alternate outline file",
     color: "blue",
     label: "Resume"
